@@ -3575,6 +3575,7 @@ Bit 8 - 15 : reserved]]></Comment>
 		<MappingInfo Identifier="{00000000-0010-0304-1000-010110000403}" Id="#x02030010"/>
 		<OwnerA Name="TIID^Device 2 (EtherCAT)">
 			<OwnerB Name="TIXC^MyCppProject^MyCppProject_Obj1 (CyclicIO)">
+				<Link VarA="Term 1 (EK1100)^Term 2 (EL1809)^Channel 1^Input" VarB="Inputs^MyPhyInput1"/>
 				<Link VarA="Term 1 (EK1100)^Term 3 (EL2809)^Channel 1^Output" VarB="Outputs^MyPhyOutput1"/>
 			</OwnerB>
 		</OwnerA>
