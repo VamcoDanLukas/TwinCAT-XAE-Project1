@@ -174,7 +174,7 @@ HRESULT CCyclicIO::CycleUpdate(ITcTask* ipTask, ITcUnknown* ipCaller, ULONG_PTR 
 {
 	HRESULT hr = S_OK;
 
-	// TODO: Replace the sample with your cyclic code
+	// <<<DGL>>>	TODO: Replace the sample with your cyclic code
 	m_counter += m_Inputs.MyPhyInput1;
 	
 	if (m_counter % 50 == 0)	

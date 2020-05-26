@@ -1426,6 +1426,13 @@ External Setpoint Generation:
 			<Tasks>
 				<Task Id="4" Priority="1" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>MyCyclicIOtask</Name>
+					<FwdSymbol>
+						<Name>MyBoolInCyclicIOtask</Name>
+						<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+					</FwdSymbol>
+				</Task>
+				<Task Id="6" Priority="20" CycleTime="100000" AmsPort="351" AdtTasks="true">
+					<Name>PlcTask</Name>
 				</Task>
 			</Tasks>
 		</System>
@@ -1732,6 +1739,17 @@ External Setpoint Generation:
 				</Axis>
 			</NC>
 		</Motion>
+		<Plc>
+			<Project GUID="{C926F45D-E6AC-4C39-8349-22216BDFCF50}" Name="MyPLC_Prj" PrjFilePath="MyPLC_Prj\MyPLC_Prj.plcproj" TmcFilePath="MyPLC_Prj\MyPLC_Prj.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+					<Name>MyPLC_Prj Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<TaskPouOids>
+						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+					</TaskPouOids>
+				</Instance>
+			</Project>
+		</Plc>
 		<Cpp>
 			<Project GUID="{16051B48-4628-4988-A3E7-3334FE251142}" Name="MyCppProject" PrjFilePath="MyCppProject\MyCppProject.vcxproj" TmcFilePath="MyCppProject\MyCppProject.tmc">
 				<Instance Id="#x01010010" KeepUnrestoredLinks="2" ClassFactoryId="C++ Module Vendor|MyCppProject|0.0.0.1">
