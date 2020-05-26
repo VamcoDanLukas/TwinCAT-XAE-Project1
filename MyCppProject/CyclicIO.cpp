@@ -175,8 +175,12 @@ HRESULT CCyclicIO::CycleUpdate(ITcTask* ipTask, ITcUnknown* ipCaller, ULONG_PTR 
 	HRESULT hr = S_OK;
 
 	// TODO: Replace the sample with your cyclic code
-	m_counter+=m_Inputs.Value;
-	m_Outputs.Value=m_counter;
+	m_counter += m_Inputs.MyPhyInput1;
+	
+	if (m_counter % 50 == 0)	
+	{	if(m_Outputs.MyPhyOutput1 == false)		m_Outputs.MyPhyOutput1 = true;	
+		else									m_Outputs.MyPhyOutput1 = false;	
+	}
 
 	return hr;
 }

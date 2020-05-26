@@ -82,7 +82,7 @@
           <Symbol>
             <Name>Data</Name>
             <BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
-          </Symbol>
+          </Symbol><Symbol><Name>MyPhyInput1</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol>
         </DataArea>
         <DataArea>
           <AreaNo AreaType="OutputSrc">1</AreaNo>
@@ -99,7 +99,7 @@
           <Symbol>
             <Name>Data</Name>
             <BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
-          </Symbol>
+          </Symbol><Symbol><Name>MyPhyOutput1</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol>
         </DataArea>
       </DataAreas>
       <InterfacePointers>
