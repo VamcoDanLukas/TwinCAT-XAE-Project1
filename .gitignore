@@ -8,7 +8,7 @@ liveview_*
 *.db-shm
 *.db-wal
 *.pid
-*.json
+##*.json
 
 
 # User-specific files

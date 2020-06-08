@@ -1,0 +1,32 @@
+{
+    "CHUNKING_OF_LARGE_REQUESTS": false,
+    "FILTER": {},
+    "RUNTIMES": {
+        "MyCppProject_Obj": {
+            "ENABLED": true,
+            "NETID": "169.254.81.228.1.1",
+            "PORT": 851,
+            "SYMBOLS": {}
+        },
+        "MyCyclicIOtask": {
+            "ENABLED": true,
+            "NETID": "169.254.81.228.1.1",
+            "PORT": 851,
+            "SYMBOLS": {}
+        },
+        "PLC1": {
+            "ENABLED": true,
+            "NETID": "169.254.81.228.1.1",
+            "PORT": 851,
+            "SYMBOLS": {
+                "MyAdsSymbol_Bool": {
+                    "INDEXGROUP": 0,
+                    "INDEXOFFSET": 0,
+                    "TYPENAME": "BIT"
+                }
+            },
+            "USE_WHITELISTING": false
+        }
+    },
+    "TIMEOUT": "PT1S"
+}
