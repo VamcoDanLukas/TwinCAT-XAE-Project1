@@ -1735,6 +1735,36 @@
             },
             "USEMAPPING": true
         },
+        "MyCppProject_Obj.MyCppProject_Obj1 (CyclicIO).Inputs.MyPhyInput1": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "MyCppProject_Obj::MyCppProject_Obj1 (CyclicIO)::Inputs::MyPhyInput1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "MyCppProject_Obj.MyCppProject_Obj1 (CyclicIO).MyDataAreaForVariables.MyCounter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "MyCppProject_Obj::MyCppProject_Obj1 (CyclicIO)::MyDataAreaForVariables::MyCounter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "MyCppProject_Obj.MyCppProject_Obj1 (CyclicIO).Outputs.MyPhyOutput1": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "MyCppProject_Obj::MyCppProject_Obj1 (CyclicIO)::Outputs::MyPhyOutput1",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "MyCyclicIOtask.MAIN.MyTestVariable": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",

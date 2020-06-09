@@ -1424,14 +1424,14 @@ External Setpoint Generation:
 				<Debugger Priority="61"/>
 			</Settings>
 			<Tasks>
-				<Task Id="4" Priority="1" CycleTime="100000" AmsPort="350" AdtTasks="true">
+				<Task Id="4" CreateSymbols="true" Priority="1" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>MyCyclicIOtask</Name>
 					<FwdSymbol>
 						<Name>MyBoolInCyclicIOtask</Name>
 						<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
 					</FwdSymbol>
 				</Task>
-				<Task Id="6" Priority="20" CycleTime="100000" AmsPort="351" AdtTasks="true">
+				<Task Id="6" Disabled="true" Priority="20" CycleTime="100000" AmsPort="351" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
 			</Tasks>
@@ -1812,29 +1812,29 @@ External Setpoint Generation:
 						</Parameters>
 						<DataAreas>
 							<DataArea>
-								<AreaNo AreaType="InputDst">0</AreaNo>
+								<AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
 								<Name>Inputs</Name>
 								<ContextId>1</ContextId>
 								<ByteSize>13</ByteSize>
-								<Symbol>
+								<Symbol CreateSymbol="true">
 									<Name>Value</Name>
 									<BitSize>32</BitSize>
 									<BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
 									<BitOffs>0</BitOffs>
 								</Symbol>
-								<Symbol>
+								<Symbol CreateSymbol="true">
 									<Name>Status</Name>
 									<BitSize>32</BitSize>
 									<BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
 									<BitOffs>32</BitOffs>
 								</Symbol>
-								<Symbol>
+								<Symbol CreateSymbol="true">
 									<Name>Data</Name>
 									<BitSize>32</BitSize>
 									<BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
 									<BitOffs>64</BitOffs>
 								</Symbol>
-								<Symbol>
+								<Symbol CreateSymbol="true">
 									<Name>MyPhyInput1</Name>
 									<BitSize>8</BitSize>
 									<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
@@ -1842,33 +1842,45 @@ External Setpoint Generation:
 								</Symbol>
 							</DataArea>
 							<DataArea>
-								<AreaNo AreaType="OutputSrc">1</AreaNo>
+								<AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
 								<Name>Outputs</Name>
 								<ContextId>1</ContextId>
 								<ByteSize>13</ByteSize>
-								<Symbol>
+								<Symbol CreateSymbol="true">
 									<Name>Value</Name>
 									<BitSize>32</BitSize>
 									<BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
 									<BitOffs>0</BitOffs>
 								</Symbol>
-								<Symbol>
+								<Symbol CreateSymbol="true">
 									<Name>Control</Name>
 									<BitSize>32</BitSize>
 									<BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
 									<BitOffs>32</BitOffs>
 								</Symbol>
-								<Symbol>
+								<Symbol CreateSymbol="true">
 									<Name>Data</Name>
 									<BitSize>32</BitSize>
 									<BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
 									<BitOffs>64</BitOffs>
 								</Symbol>
-								<Symbol>
+								<Symbol CreateSymbol="true">
 									<Name>MyPhyOutput1</Name>
 									<BitSize>8</BitSize>
 									<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
 									<BitOffs>96</BitOffs>
+								</Symbol>
+							</DataArea>
+							<DataArea>
+								<AreaNo AreaType="Standard" CreateSymbols="true" ShowSymbols="true">3</AreaNo>
+								<Name>MyDataAreaForVariables</Name>
+								<ContextId>1</ContextId>
+								<ByteSize>2</ByteSize>
+								<Symbol CreateSymbol="true">
+									<Name>MyCounter</Name>
+									<BitSize>16</BitSize>
+									<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
+									<BitOffs>0</BitOffs>
 								</Symbol>
 							</DataArea>
 						</DataAreas>

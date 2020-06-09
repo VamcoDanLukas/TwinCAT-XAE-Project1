@@ -5,17 +5,17 @@
         "MyCppProject_Obj": {
             "ENABLED": true,
             "NETID": "169.254.81.228.1.1",
-            "PORT": 851,
+            "PORT": 350,
             "SYMBOLS": {}
         },
         "MyCyclicIOtask": {
             "ENABLED": true,
             "NETID": "169.254.81.228.1.1",
-            "PORT": 851,
+            "PORT": 350,
             "SYMBOLS": {}
         },
         "PLC1": {
-            "ENABLED": true,
+            "ENABLED": false,
             "NETID": "169.254.81.228.1.1",
             "PORT": 851,
             "SYMBOLS": {
