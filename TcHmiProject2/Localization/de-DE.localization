@@ -1,8 +1,0 @@
-﻿{
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/LocalizationDescription.Schema.json",
-  "locale": "de-DE",
-  "localizedText": {
-    "Text1": "Hallo Welt!",
-    "Text2": "Ich bin ein lokalisierter Text."
-  }
-}
