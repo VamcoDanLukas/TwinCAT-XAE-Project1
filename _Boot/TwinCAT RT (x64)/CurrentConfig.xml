@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<TcBootProject CreateTime="2020-06-09T07:13:32">
+<TcBootProject CreateTime="2020-06-09T09:09:28">
 	<System>
 		<LockedMemSize>33554432</LockedMemSize>
 		<AffinityMask>#x1</AffinityMask>
 		<TComSrvAffinity>#x1</TComSrvAffinity>
 		<RtParam>
 			<P1 Desc="MaxStackSize">64</P1>
-			<P0 Desc="MaxNumTasks">7</P0>
+			<P0 Desc="MaxNumTasks">6</P0>
 		</RtParam>
 	</System>
 	<Drivers>

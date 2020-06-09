@@ -1431,9 +1431,6 @@ External Setpoint Generation:
 						<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
 					</FwdSymbol>
 				</Task>
-				<Task Id="6" Disabled="true" Priority="20" CycleTime="100000" AmsPort="351" AdtTasks="true">
-					<Name>PlcTask</Name>
-				</Task>
 			</Tasks>
 		</System>
 		<Motion>
