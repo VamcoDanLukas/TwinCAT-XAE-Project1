@@ -177,11 +177,23 @@ HRESULT CCyclicIO::CycleUpdate(ITcTask* ipTask, ITcUnknown* ipCaller, ULONG_PTR 
 	HRESULT hr = S_OK;
 
 	// <<<DGL>>>	TODO: Replace the sample with your cyclic code
-	m_MyDataAreaForVariables.MyCounter += m_Inputs.MyPhyInput1;
-	
-	if (m_MyDataAreaForVariables.MyCounter % 50 == 0)
-	{	if(m_Outputs.MyPhyOutput1 == false)		m_Outputs.MyPhyOutput1 = true;	
-	else									m_Outputs.MyPhyOutput1 = false;	
+	if (m_Inputs.MyPhyInput1)	m_MyDataAreaForVariables.MyCounter++;
+	if (m_Inputs.MyPhyInput2)	m_MyDataAreaForVariables.MyCounter += 5;
+
+	if (m_MyDataAreaForVariables.MyCounter % 10 == 0)
+	{
+		if (m_Outputs.MyPhyOutput1 == false)
+		{
+			m_Outputs.MyPhyOutput1 = true;
+//			m_Outputs.MyPhyOutput2 = true;
+//			m_Outputs.MyPhyOutput3 = true;
+		}
+		else
+		{
+			m_Outputs.MyPhyOutput1 = false;
+//			m_Outputs.MyPhyOutput2 = false;
+//			m_Outputs.MyPhyOutput3 = false;
+		}
 	}
 
 	return hr;

@@ -82,7 +82,7 @@
           <Symbol CreateSymbol="true">
             <Name>Data</Name>
             <BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
-          </Symbol><Symbol CreateSymbol="true"><Name>MyPhyInput1</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol>
+          </Symbol><Symbol CreateSymbol="true"><Name>MyPhyInput1</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol><Symbol CreateSymbol="true"><Name>MyPhyInput2</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol>
         </DataArea>
         <DataArea>
           <AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
@@ -99,7 +99,7 @@
           <Symbol CreateSymbol="true">
             <Name>Data</Name>
             <BaseType GUID="{18071995-0000-0000-0000-000000000008}">UDINT</BaseType>
-          </Symbol><Symbol CreateSymbol="true"><Name>MyPhyOutput1</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol>
+          </Symbol><Symbol CreateSymbol="true"><Name>MyPhyOutput1</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol><Symbol CreateSymbol="true"><Name>MyPhyOutput2</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol><Symbol CreateSymbol="true"><Name>MyPhyOutput3</Name><BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType></Symbol>
         </DataArea><DataArea><AreaNo AreaType="Standard" CreateSymbols="true">3</AreaNo><Name>MyDataAreaForVariables</Name><ContextId>1</ContextId><Symbol CreateSymbol="true"><Name>MyCounter</Name><DisplayName TxtId="" /><BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType></Symbol></DataArea>
       </DataAreas>
       <InterfacePointers>

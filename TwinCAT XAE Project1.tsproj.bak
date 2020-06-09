@@ -1812,7 +1812,7 @@ External Setpoint Generation:
 								<AreaNo AreaType="InputDst" CreateSymbols="true">0</AreaNo>
 								<Name>Inputs</Name>
 								<ContextId>1</ContextId>
-								<ByteSize>13</ByteSize>
+								<ByteSize>14</ByteSize>
 								<Symbol CreateSymbol="true">
 									<Name>Value</Name>
 									<BitSize>32</BitSize>
@@ -1837,12 +1837,18 @@ External Setpoint Generation:
 									<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
 									<BitOffs>96</BitOffs>
 								</Symbol>
+								<Symbol CreateSymbol="true">
+									<Name>MyPhyInput2</Name>
+									<BitSize>8</BitSize>
+									<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
+									<BitOffs>104</BitOffs>
+								</Symbol>
 							</DataArea>
 							<DataArea>
 								<AreaNo AreaType="OutputSrc" CreateSymbols="true">1</AreaNo>
 								<Name>Outputs</Name>
 								<ContextId>1</ContextId>
-								<ByteSize>13</ByteSize>
+								<ByteSize>15</ByteSize>
 								<Symbol CreateSymbol="true">
 									<Name>Value</Name>
 									<BitSize>32</BitSize>
@@ -1867,9 +1873,21 @@ External Setpoint Generation:
 									<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
 									<BitOffs>96</BitOffs>
 								</Symbol>
+								<Symbol CreateSymbol="true">
+									<Name>MyPhyOutput2</Name>
+									<BitSize>8</BitSize>
+									<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
+									<BitOffs>104</BitOffs>
+								</Symbol>
+								<Symbol CreateSymbol="true">
+									<Name>MyPhyOutput3</Name>
+									<BitSize>8</BitSize>
+									<BaseType GUID="{18071995-0000-0000-0000-000000000030}">BOOL</BaseType>
+									<BitOffs>112</BitOffs>
+								</Symbol>
 							</DataArea>
 							<DataArea>
-								<AreaNo AreaType="Standard" CreateSymbols="true" ShowSymbols="true">3</AreaNo>
+								<AreaNo AreaType="Standard" CreateSymbols="true">3</AreaNo>
 								<Name>MyDataAreaForVariables</Name>
 								<ContextId>1</ContextId>
 								<ByteSize>2</ByteSize>
@@ -3592,7 +3610,10 @@ Bit 8 - 15 : reserved]]></Comment>
 		<OwnerA Name="TIID^Device 2 (EtherCAT)">
 			<OwnerB Name="TIXC^MyCppProject^MyCppProject_Obj1 (CyclicIO)">
 				<Link VarA="Term 1 (EK1100)^Term 2 (EL1809)^Channel 1^Input" VarB="Inputs^MyPhyInput1"/>
+				<Link VarA="Term 1 (EK1100)^Term 2 (EL1809)^Channel 2^Input" VarB="Inputs^MyPhyInput2"/>
 				<Link VarA="Term 1 (EK1100)^Term 3 (EL2809)^Channel 1^Output" VarB="Outputs^MyPhyOutput1"/>
+				<Link VarA="Term 1 (EK1100)^Term 3 (EL2809)^Channel 2^Output" VarB="Outputs^MyPhyOutput2"/>
+				<Link VarA="Term 1 (EK1100)^Term 3 (EL2809)^Channel 3^Output" VarB="Outputs^MyPhyOutput3"/>
 			</OwnerB>
 		</OwnerA>
 		<OwnerA Name="TINC^NC-Task 1 SAF^Axes^Axis 1">

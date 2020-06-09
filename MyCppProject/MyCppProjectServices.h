@@ -31,6 +31,7 @@ typedef struct _CyclicIOInputs
 	ULONG Status;
 	ULONG Data;
 	bool MyPhyInput1;
+	bool MyPhyInput2;
 } CyclicIOInputs, *PCyclicIOInputs;
 #pragma pack(pop)
 
@@ -41,6 +42,8 @@ typedef struct _CyclicIOOutputs
 	ULONG Control;
 	ULONG Data;
 	bool MyPhyOutput1;
+	bool MyPhyOutput2;
+	bool MyPhyOutput3;
 } CyclicIOOutputs, *PCyclicIOOutputs;
 #pragma pack(pop)
 

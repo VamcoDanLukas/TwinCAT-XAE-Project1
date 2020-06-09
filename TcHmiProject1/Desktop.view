@@ -15,7 +15,7 @@
 
   </div>
 
-<div id="TcHmiButton" data-tchmi-type="tchmi-button" data-tchmi-height="75" data-tchmi-height-unit="px" data-tchmi-left="126" data-tchmi-left-unit="px" data-tchmi-text="MyStartStop" data-tchmi-top="187" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%s%MyCppProject_Obj.MyCppProject_Obj1 (CyclicIO).Inputs.MyPhyInput1%/s%">
+<div id="TcHmiButton" data-tchmi-type="tchmi-button" data-tchmi-height="75" data-tchmi-height-unit="px" data-tchmi-left="126" data-tchmi-left-unit="px" data-tchmi-text="MyStartStop" data-tchmi-top="187" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%s%MyCppProject_Obj.MyCppProject_Obj1 (CyclicIO).Outputs.MyPhyOutput2%/s%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
